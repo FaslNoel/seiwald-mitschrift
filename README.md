@@ -16,8 +16,8 @@ LTS-Version (_Long Term Support_) installieren.
 
 ## Installation von pnpm
 
-Der standardmäßige _Pakage Manager_ für Node.js ist npm (_node package manager_).
-Eine etwas modernere und inzwischen beliebtere Variante ist [pnpm](https://pnpm.io/).
+Der standardmäßige _Pakage Manager_ für Node.js ist npm (_node package manager_). Eine etwas modernere und inzwischen beliebtere Variante ist [pnpm](https://pnpm.io/) (performant npm).
+_Package Manager_ ermöglichen die Installation von Softwarepaketen.
 
 ## Installation von Strapi
 
