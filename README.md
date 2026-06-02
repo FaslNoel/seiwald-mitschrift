@@ -20,3 +20,7 @@ Der standardmäßige _Pakage Manager_ für Node.js ist npm (_node package manage
 Eine etwas modernere und inzwischen beliebtere Variante ist [pnpm](https://pnpm.io/).
 
 ## Installation von Strapi
+
+## Grundkenntnisse
+
+Die Path-Umgebungsvariable ist eine Liste von Verzeichnissen in Ihrem Betriebssystem. Sie teilt dem System mit, wo nach ausführbaren Programmen oder Befehlen gesucht werden soll, ohne dass Sie den vollständigen Dateipfad eingeben müssen.
