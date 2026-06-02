@@ -21,6 +21,17 @@ _Package Manager_ ermöglichen die Installation von Softwarepaketen.
 
 ## Installation von Strapi
 
+### Typescript
+
+Typescript ist eine statisch typisierte Version von Javascript. In JS gibt es keine Typen, in TS schon. Bsp.:
+
+- JS: let x=3;
+- Java: double y=4.2;
+- TS: let z: number = 5;
+
 ## Grundkenntnisse
 
 Die Path-Umgebungsvariable ist eine Liste von Verzeichnissen in Ihrem Betriebssystem. Sie teilt dem System mit, wo nach ausführbaren Programmen oder Befehlen gesucht werden soll, ohne dass Sie den vollständigen Dateipfad eingeben müssen.
+
+_Superset_: Übermenge  
+cd: _change directory_ (Wechseln des Verzeichnisses)
