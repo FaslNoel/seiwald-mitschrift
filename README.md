@@ -21,6 +21,11 @@ _Package Manager_ ermöglichen die Installation von Softwarepaketen.
 
 ## Installation von Strapi
 
+Installation mit dem Skript `npm create strapi`. Daraufhin führt uns das CLI durch die Installation. Falls bei der Installation sogenannte `build scripts` nicht ausgeführt werden können, schlägt die CLI die Fehlerbehandlung selbstständig vor:
+
+1. Wechsel in das Installationsverzeichnis (z.B. mit `cd my-strapi-project`).
+2. Neuerlicher Versuch der Installation mit `pnpm install`. Dieser scheitert in der Regel - die Build-Skripte können müssen mit `pnpm approve-builds` freigegeben werden.
+
 ### Typescript
 
 Typescript ist eine statisch typisierte Version von Javascript. In JS gibt es keine Typen, in TS schon. Bsp.:
