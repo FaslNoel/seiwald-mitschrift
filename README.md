@@ -45,6 +45,10 @@ VibeCoding passiert in VS-Code in erster Linie über die neu eingeführte Agent 
 - **MCP-Server**  
   MCP steht für _Model Context Protocoll_. Es ist ein Standard, der von Anthropic entwickelt wurde. Mithilfe von MCP können Chatbots/LLMs (_Large Language Models_) auf zusätzliche Tools zugreifen, die sie zu Experten in einem bestimmten Themenbereich machen.
 
+  ## Javascript-Frontendentwicklung mit Frameworks (Svelte, React, Vue, Angular, ...)
+
+  Frontend-Entwicklung
+
 ## Grundkenntnisse
 
 Die Path-Umgebungsvariable ist eine Liste von Verzeichnissen in Ihrem Betriebssystem. Sie teilt dem System mit, wo nach ausführbaren Programmen oder Befehlen gesucht werden soll, ohne dass Sie den vollständigen Dateipfad eingeben müssen.
