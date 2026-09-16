@@ -61,4 +61,8 @@ CRUD:
 - Delete - DELETE
 
 _Superset_: Übermenge  
-cd: _change directory_ (Wechseln des Verzeichnisses)
+cd: _change directory_ (Wechseln des Verzeichnisses)  
+JDK: _Java Development Kit_ (Java-Entwicklungsumgebung)  
+SDK: _Software Development Kit_ (Software-Entwicklungsumgebung)
+_User Installer_ (Benutzerinstallationsprogramm): Es wird nur für einen Benutzer installiert. Andere Benutzer haben keinen Zugriff darauf.
+_System Installer_(Systeminstallationsprogramm):
