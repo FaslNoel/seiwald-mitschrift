@@ -64,4 +64,137 @@ _Superset_: Übermenge
 cd: _change directory_ (Wechseln des Verzeichnisses)  
 JDK: _Java Development Kit_ (Java-Entwicklungsumgebung)  
 SDK: _Software Development Kit_ (Software-Entwicklungsumgebung)
+_System Installer_ (Systeminstallationsprogramm): Es wird für alle Benutzer des Systems installiert.  
 _User Installer_ (Benutzerinstallationsprogramm): Es wird nur für einen Benutzer installiert. Andere Benutzer haben keinen Zugriff darauf. _System Installer_(Systeminstallationsprogramm):
+
+##
+
+## 4BHK SWP
+
+## Aufbau einer Website: (DOM/html-Document Object Model-Tree)
+
+### - html = Wurzel (Root)
+
+#### --> head:
+
+- title
+- links (css)
+- OS (SEO)
+
+#### --> body (document.body)
+
+- ...
+
+## Frontend Frameworks
+
+Sie nehmen die Liste heraus und packen html, css und js in eine Datei. Es gibt verschiedene UI-Komponenten. Komponenten sind vollkommen eigenständig.
+
+- list = ["Brot", "Kaffee", "Bier"]  
+  JS --> Daten + Funktionen
+- Template (Vorlage) --> html
+
+```html
+<ul>
+  {for item inList}
+  <li>{item}</li>
+  {endfor}
+</ul>
+```
+
+### Svelte
+
+- Komponentenbasiert (single File)
+- Komponenten haben Module (script, style, markup)
+- deklerativ:
+
+Metaframeworks:
+
+- Next (React)
+- Nuxt (Vue)
+- SvelteKit (Svelte)
+
+**_Unterschied Zuweisung und Mutation_**
+
+- **Zuweisung**: Das Zuweisen eines neuen Wertes zu einer Variablen. Beispiel in JavaScript:
+
+  ```javascript
+  let x = 5; // Zuweisung
+  x = 10; // Neue Zuweisung
+  ```
+
+  ```html
+  Parent:svelte
+  <script>
+    import Child from "./Child.svelte";
+  </script>
+
+  <ul>
+    <Child prop="xyz"> </Child>
+  </ul>
+  ```
+
+  Geschwungene Klammern `{}` werden in Svelte verwendet, um JavaScript-Ausdrücke innerhalb des HTML-Markups einzubetten.
+
+- **Mutation**: Das Ändern des Inhalts eines bestehenden Objekts oder Arrays, ohne die Referenz zu ändern. Beispiel in JavaScript:
+
+- **Wichtige Runen in JavaScript:**
+
+- $state()
+- $derived()
+- $effect() "Konstruktor für ein "svelte-File" => SFC
+
+  ```javascript
+  let arr = [1, 2, 3];
+  arr.push(4); // Mutation des Arrays
+  ```
+
+  **Select Bindings:**
+
+```javascript
+  <script>
+	let questions = [
+		{
+			id: 1,
+			text: `Where did you go to school?`
+		},
+		{
+			id: 2,
+			text: `What is your mother's name?`
+		},
+		{
+			id: 3,
+			text: `What is another personal fact that an attacker could easily find with Google?`
+		}
+	];
+
+	let selected = $state();
+
+	let answer = $state('');
+
+	function handleSubmit(e) {
+		e.preventDefault();
+
+		alert(
+			`answered question ${selected.id} (${selected.text}) with "${answer}"`
+		);
+	}
+</script>
+
+<h2>Insecurity questions</h2>
+
+<p>{selected?selected.text : "nix"}</p>
+<p>
+	selected question {selected
+		? selected.id
+		: '[waiting...]'}
+</p>
+```
+
+## Grundkenntnisse
+
+- _Cross-Site Scripting (XSS):_ Eine Sicherheitslücke, bei der Angreifer schädlichen Code in Webseiten einschleusen können.
+- Bedingte Verzweigungen (_Conditionals_) in Svelte werden mit `{#if ...}{/if}` umgesetzt. Beispiel:
+- Aria (_Accessible Rich Internet Applications_): Dienen der Barrierefreiheit und helfen dabei, Webinhalte für Menschen mit Behinderungen zugänglich zu machen.
+- _Stack (Last In, First Out - LIFO):_ Ein Datenstrukturprinzip, bei dem das zuletzt hinzugefügte Element zuerst entfernt wird.
+- _Queue (First In, First Out - FIFO):_ Ein Datenstrukturprinzip, bei dem das zuerst hinzugefügte Element zuerst entfernt wird.
+- anonyme Funktion: Eine Funktion ohne Namen, die oft als Argument an andere Funktionen übergeben wird.
