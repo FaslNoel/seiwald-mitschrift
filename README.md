@@ -67,9 +67,9 @@ SDK: _Software Development Kit_ (Software-Entwicklungsumgebung)
 _System Installer_ (Systeminstallationsprogramm): Es wird für alle Benutzer des Systems installiert.  
 _User Installer_ (Benutzerinstallationsprogramm): Es wird nur für einen Benutzer installiert. Andere Benutzer haben keinen Zugriff darauf. _System Installer_(Systeminstallationsprogramm):
 
-##
+---
 
-## 4BHK SWP
+# 4BHK SWP
 
 ## Aufbau einer Website: (DOM/html-Document Object Model-Tree)
 
@@ -190,6 +190,14 @@ Metaframeworks:
 </p>
 ```
 
+## Github
+
+- node.modules nie auf Github hochladen.
+- .env auch nie auf Github hochladen.
+- In der package.json steht, welche Abhängigkeiten das Projekt benötigt. Diese sollten nicht manuell verändert werden, sondern über den Paketmanager (z.B. npm oder yarn) installiert werden.
+- _Dependencies_: Sind für das Projekt während der Laufzeit notwendig.
+- _Dev Dependencies_: Braucht man nur während der Entwicklung.
+
 ## Grundkenntnisse
 
 - _Cross-Site Scripting (XSS):_ Eine Sicherheitslücke, bei der Angreifer schädlichen Code in Webseiten einschleusen können.
@@ -198,3 +206,15 @@ Metaframeworks:
 - _Stack (Last In, First Out - LIFO):_ Ein Datenstrukturprinzip, bei dem das zuletzt hinzugefügte Element zuerst entfernt wird.
 - _Queue (First In, First Out - FIFO):_ Ein Datenstrukturprinzip, bei dem das zuerst hinzugefügte Element zuerst entfernt wird.
 - anonyme Funktion: Eine Funktion ohne Namen, die oft als Argument an andere Funktionen übergeben wird.
+
+---
+
+# Historische Entwicklung von WebDev
+
+Webdevelopment hat im Laufe der letzten rund 35 Jahre einige Evolutionsstufen durchlaufen:
+
+1. Statische Websites (HTML, CSS, ggf. JavaScript-Dateien) - initiale Phase des Webdevelopments, bei der Inhalte fest im HTML-Code verankert sind. Dominant in den 1990er-Jahren.
+
+2. Dynamische Websites (mit serverseitiger Programmiersprache - PHP, Python, NodeJS - und Datenbankanbindung). Dominant in den 2000er-Jahren.
+
+3. _Single-Page Applications_ (SPAs) - mit JavaScript-Frameworks erstellte "Webapps", die ähnliche Funktionen wie klassische Desktop-Anwendungen bzw. Handy-Apps bieten. Dominant in den 2010er-Jahren.
