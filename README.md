@@ -206,6 +206,8 @@ Metaframeworks:
 - _Stack (Last In, First Out - LIFO):_ Ein Datenstrukturprinzip, bei dem das zuletzt hinzugefügte Element zuerst entfernt wird.
 - _Queue (First In, First Out - FIFO):_ Ein Datenstrukturprinzip, bei dem das zuerst hinzugefügte Element zuerst entfernt wird.
 - anonyme Funktion: Eine Funktion ohne Namen, die oft als Argument an andere Funktionen übergeben wird.
+- Interpreted vs. Compiled: Interpreted languages (Skriptsprachen) are executed line by line by an interpreter (e.g., Python, JavaScript), whereas compiled languages are transformed into machine code by a compiler before execution (e.g., C, C++).
+- Datenkapselung (_Encapsulation_) ist ein Grundprinzip der objektorientierten Programmierung (OOP), das Daten (Attribute) und die Methoden, die auf ihnen arbeiten, in einer einzigen Einheit (Klasse) zusammenfasst und den direkten Zugriff von außen einschränkt.
 
 ---
 
@@ -215,6 +217,16 @@ Webdevelopment hat im Laufe der letzten rund 35 Jahre einige Evolutionsstufen du
 
 1. Statische Websites (HTML, CSS, ggf. JavaScript-Dateien) - initiale Phase des Webdevelopments, bei der Inhalte fest im HTML-Code verankert sind. Dominant in den 1990er-Jahren.
 
-2. Dynamische Websites (mit serverseitiger Programmiersprache - PHP, Python, NodeJS - und Datenbankanbindung). Dominant in den 2000er-Jahren.
+2. Dynamische Websites (mit serverseitiger Programmiersprache - PHP, Python, NodeJS - und **Datenbankanbindung**). Dominant in den 2000er-Jahren.
 
-3. _Single-Page Applications_ (SPAs) - mit JavaScript-Frameworks erstellte "Webapps", die ähnliche Funktionen wie klassische Desktop-Anwendungen bzw. Handy-Apps bieten. Dominant in den 2010er-Jahren.
+3. _Single-Page Applications_ (SPAs) - mit JavaScript-Frameworks (z.B.: React, Vue, Angular, Svelte, ...) erstellte "Webapps", die ähnliche Funktionen wie klassische Desktop-Anwendungen bzw. Handy-Apps bieten (Push-Benachrichtigungen, Kamera, GPS, Mikrofon, Bluetooth, Gyroskop/Trägheitssensor). Dominant in den 2010er-Jahren. Um Handy-Apps möglichst nahe zu kommen, wurde der _Progressive Web App_ (PWA)-Standard entwickelt. Damit können Webapps offline funktionieren, Push-Benachrichtigungen senden und auf bestimmte native Funktionen des Geräts zugreifen.  
+   https://progressier.com/pwa-vs-native-app-comparison-table  
+   Es gibt drei Vorraussetzungen, die eine Webapp erfüllen muss, um als PWA zu gelten:
+   1. Die Webapp muss über ein Web-App-Manifest verfügen (`manifest.json`), das grundlegende Informationen (Metadaten, ...) über die App enthält (Name, Icons, Start-URL, etc.).
+   2. Die Webapp muss einen Service Worker implementieren, der das Caching von Ressourcen und die Offline-Funktionalität ermöglicht. Ein Service Worker ist eine JavaScript-Datei, die im Hintergrund des Browsers läuft - selbst wenn der Browser geschlossen ist.
+   3. Die Webapp muss über HTTPS bereitgestellt werden, um die Sicherheit und Integrität der Anwendung zu gewährleisten.
+
+   Frontend-Frameworks wenden folgende Architekturprinzipien an, um eine möglichst gute _User Experience_ (UX) zu erreichen:
+   - _Component-based Architecture_: **Komponenten** sind die wiederverwendbaren Klemmbausteine einer Webapp. Sie kapseln HTML, CSS und JavaScript in einer einzigen Einheit unabhängig von anderen Komponenten entwickelt, getestet und gewartet werden kann.
+   - **Deklarative Programmierung**: der JavaScript und Template (HTML)-Code beschreiben, wie die Benutzeroberfläche aussehen soll, anstatt die einzelnen Schritte zur Erstellung der Benutzeroberfläche zu definieren. Das Framework kümmert sich um die Umsetzung. Dabei kommt **Reaktivität** (_reactivity_) ins Spiel: Wenn sich die Benutzeroberfläche (UI), um den neuen Zustand (_state_) widerzuspiegeln. Wenn die Aktualisierung auch in die andere Richtung funktioniert (d.h. wenn sich die Benutzeroberfläche ändert, weil der Benutzer mit ihr interagiert, und der Zustand der Anwendung entsprechend aktualisiert wird), spricht man von bidirektionaler Datenanbindung (_two-way data binding_).  
+     **Logikbausteine** (Schleifen zur Darstellung von Listen und Bedingungen für das konditionale Ein- und Ausblenden von UI-Elementen) werden in den Templates der Komponenten definiert. Die Templates werden vom Framework in die eigentliche Benutzeroberfläche übersetzt. Komponenten können auch andere Komponenten enthalten (verschachtelt werden), wodurch eine hierarchische Struktur entsteht. Die Kommunikation zwischen Komponenten erfolgt über **Props** (Eigenschaften) und **Events** (Ereignisse). Props sind Daten, die von einer übergeordneten Komponente an eine untergeordnete Komponente weitergegeben werden. Events sind Benachrichtigungen, die von einer untergeordneten Komponente an eine übergeordnete Komponente gesendet werden, um auf Benutzerinteraktionen oder andere Ereignisse zu reagieren.
