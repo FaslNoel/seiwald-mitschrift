@@ -203,11 +203,17 @@ Metaframeworks:
 - _Cross-Site Scripting (XSS):_ Eine Sicherheitslücke, bei der Angreifer schädlichen Code in Webseiten einschleusen können.
 - Bedingte Verzweigungen (_Conditionals_) in Svelte werden mit `{#if ...}{/if}` umgesetzt. Beispiel:
 - Aria (_Accessible Rich Internet Applications_): Dienen der Barrierefreiheit und helfen dabei, Webinhalte für Menschen mit Behinderungen zugänglich zu machen.
-- _Stack (Last In, First Out - LIFO):_ Ein Datenstrukturprinzip, bei dem das zuletzt hinzugefügte Element zuerst entfernt wird.
+- _Stack:_
+  1. Ein Datenstrukturprinzip, bei dem das zuletzt hinzugefügte Element zuerst entfernt wird (_Last In, First Out_ - LIFO).
+  2. Ein Server Stack ist ein Zusammenschluss von unterschiedlichen Programmen, die zusammenspielen damit sie einen neuen Service anbieten können (z.B.: OS, Web-Server, Datenbank, Serverseitiges Script, Mail-Server oder Frontend, API, Backend)
+  3. Bereich im RAM (Speicher) einer Anwendung
 - _Queue (First In, First Out - FIFO):_ Ein Datenstrukturprinzip, bei dem das zuerst hinzugefügte Element zuerst entfernt wird.
 - anonyme Funktion: Eine Funktion ohne Namen, die oft als Argument an andere Funktionen übergeben wird.
 - Interpreted vs. Compiled: Interpreted languages (Skriptsprachen) are executed line by line by an interpreter (e.g., Python, JavaScript), whereas compiled languages are transformed into machine code by a compiler before execution (e.g., C, C++).
 - Datenkapselung (_Encapsulation_) ist ein Grundprinzip der objektorientierten Programmierung (OOP), das Daten (Attribute) und die Methoden, die auf ihnen arbeiten, in einer einzigen Einheit (Klasse) zusammenfasst und den direkten Zugriff von außen einschränkt.
+- Rest-API: hat die vier CRUD-Operationen, welche einer HTTP-Methode entsprechen.
+- package.json: wichtigste Datei, enthält ausführbare Befehle
+- vite: Bildtool
 
 ---
 
