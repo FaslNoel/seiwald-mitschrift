@@ -236,3 +236,34 @@ Webdevelopment hat im Laufe der letzten rund 35 Jahre einige Evolutionsstufen du
    - _Component-based Architecture_: **Komponenten** sind die wiederverwendbaren Klemmbausteine einer Webapp. Sie kapseln HTML, CSS und JavaScript in einer einzigen Einheit unabhängig von anderen Komponenten entwickelt, getestet und gewartet werden kann.
    - **Deklarative Programmierung**: der JavaScript und Template (HTML)-Code beschreiben, wie die Benutzeroberfläche aussehen soll, anstatt die einzelnen Schritte zur Erstellung der Benutzeroberfläche zu definieren. Das Framework kümmert sich um die Umsetzung. Dabei kommt **Reaktivität** (_reactivity_) ins Spiel: Wenn sich die Benutzeroberfläche (UI), um den neuen Zustand (_state_) widerzuspiegeln. Wenn die Aktualisierung auch in die andere Richtung funktioniert (d.h. wenn sich die Benutzeroberfläche ändert, weil der Benutzer mit ihr interagiert, und der Zustand der Anwendung entsprechend aktualisiert wird), spricht man von bidirektionaler Datenanbindung (_two-way data binding_).  
      **Logikbausteine** (Schleifen zur Darstellung von Listen und Bedingungen für das konditionale Ein- und Ausblenden von UI-Elementen) werden in den Templates der Komponenten definiert. Die Templates werden vom Framework in die eigentliche Benutzeroberfläche übersetzt. Komponenten können auch andere Komponenten enthalten (verschachtelt werden), wodurch eine hierarchische Struktur entsteht. Die Kommunikation zwischen Komponenten erfolgt über **Props** (Eigenschaften) und **Events** (Ereignisse). Props sind Daten, die von einer übergeordneten Komponente an eine untergeordnete Komponente weitergegeben werden. Events sind Benachrichtigungen, die von einer untergeordneten Komponente an eine übergeordnete Komponente gesendet werden, um auf Benutzerinteraktionen oder andere Ereignisse zu reagieren.
+
+---
+
+# Frontendentwicklung
+
+## Ordnerstruktur
+
+Die Ordnerstruktur einer typischen Frontend-Anwendung sieht in etwa so aus:  
+![Ordnerstruktur einer Svelte-Anwendung](image.png)
+
+- Der Ordner `.vscode` enthält Einstellungen für den VS-Code-Editor.
+- Der Ordner `node_modules` enthält die Abhängigkeiten (_dependencies_) der Anwendung. Das sind jene Pakete, die bei der Entwicklung (_buildtime_) und/oder bei der Ausführung (_runtime_) der Anwendung benötigt werden.
+- Alle Abhängigkeiten sind in der Datei `package.json` Informationen über die Anwendung selbst (Name, Version, Autor, Lizenz, etc.) und Skripte, die bestimmte Aufgaben automatisieren (z.B. Starten der Anwendung, Testen der Anwendung, Erstellen einer Produktionsversion der Anwendung).
+- Der Ordner Public enthält statische Dateien/Assets (Bilder, Videos, Schriftarten), die direkt vom Browser unter dem jeweiligen Pfad geladen werden können (public/image.png = www.johak.at/image.png)  
+  ![Unterstruktur des src-Ordners](image-1.png)
+- Der Ordner `src` enthält den Quellcode der Anwendung.
+- Alle Dateien/Ordner die in der `.gitignore` stehen werden nicht auf Github hochgeladen.
+
+---
+
+# 4BHK IMCM
+
+Kontrollstrukturen
+
+- Schleifen
+- Bedingte Verzweigungen
+
+Datenstrukturen
+
+- Arrays
+- Objekte (JS) --> key-value-Paare
