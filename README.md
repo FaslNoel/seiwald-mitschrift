@@ -214,6 +214,7 @@ Metaframeworks:
 - Rest-API: hat die vier CRUD-Operationen, welche einer HTTP-Methode entsprechen.
 - package.json: wichtigste Datei, enthält ausführbare Befehle
 - vite: Bildtool
+- mount: einbinden
 
 ---
 
@@ -249,9 +250,16 @@ Die Ordnerstruktur einer typischen Frontend-Anwendung sieht in etwa so aus:
 - Der Ordner `.vscode` enthält Einstellungen für den VS-Code-Editor.
 - Der Ordner `node_modules` enthält die Abhängigkeiten (_dependencies_) der Anwendung. Das sind jene Pakete, die bei der Entwicklung (_buildtime_) und/oder bei der Ausführung (_runtime_) der Anwendung benötigt werden.
 - Alle Abhängigkeiten sind in der Datei `package.json` Informationen über die Anwendung selbst (Name, Version, Autor, Lizenz, etc.) und Skripte, die bestimmte Aufgaben automatisieren (z.B. Starten der Anwendung, Testen der Anwendung, Erstellen einer Produktionsversion der Anwendung).
-- Der Ordner Public enthält statische Dateien/Assets (Bilder, Videos, Schriftarten), die direkt vom Browser unter dem jeweiligen Pfad geladen werden können (public/image.png = www.johak.at/image.png)  
+- Der Ordner `public`/`static` enthält statische Dateien/Assets (Bilder, Videos, Schriftarten), die direkt vom Browser unter dem jeweiligen Pfad geladen werden können (public/image.png = www.johak.at/image.png)  
   ![Unterstruktur des src-Ordners](image-1.png)
-- Der Ordner `src` enthält den Quellcode der Anwendung.
+- Der Ordner `src` enthält den Quellcode der Anwendung. Die Dateien `app.css`, `App.svelte` und `main.ts` sind die Einstiegspunkte der Anwendung (in diesem Fall eine SPA). Sie werden vom Browser als erstes geladen, wenn die entsprechende Website aufgerufen wird.
+  - Die Datei `app.css` enthält die globalen CSS-Stile der Anwendung.
+  - Die Datei `App.svelte` ist die Hauptkomponente der Anwendung, die andere Komponenten importiert und in der Benutzeroberfläche anzeigt.
+  - Die Datei `main.ts` ist der Einstiegspunkt für das JavaScript/TypeScript der Anwendung. Sie initialisiert die Anwendung in der `App.svelte` und bindet sie an das HTML-Dokument (`index.html` im Root-Ordner).
+- Der Ordner `lib` enthält benutzerdefinierte Bibliotheken/UI-Komponenten und Hilfsfunktionen, die in der Anwendung verwendet werden.
+  - Der Ordner `components` enthält die wiederverwendbaren Komponenten der Anwendung. Sie sind die Bausteine der Benutzerfläche.
+  - Der Ordner `game` enthält die Logik für das Spiel.
+  - Die Datei `store.svelte.ts` enthält den Zustand (_state_) der Anwendung. D.h. sie speichert alle Daten, die sich im Laufe der Zeit ändern können (z.B. Spielstand, Spielergebnisse, Einstellungen, usw.) und fungiert als zentrale Datenquelle - _Single Source of Truth_ (für mehr Details zum Speichermanagement im Frontend siehe Road-to-IT-Matura Team im Kanal "SWP - 06 - Softwarearchitektur").
 - Alle Dateien/Ordner die in der `.gitignore` stehen werden nicht auf Github hochgeladen.
 
 ---
