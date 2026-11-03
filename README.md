@@ -266,12 +266,25 @@ Die Ordnerstruktur einer typischen Frontend-Anwendung sieht in etwa so aus:
 
 # 4BHK IMCM
 
-Kontrollstrukturen
+**Kontrollstrukturen**
 
 - Schleifen
 - Bedingte Verzweigungen
 
-Datenstrukturen
+**Datenstrukturen**
 
 - Arrays
 - Objekte (JS) --> key-value-Paare
+
+**Mit Arrays arbeiten (Funktionen):**
+
+- map rechnet z.B. alle Elemente \*2
+- filter schließt Werte aus
+- reduce reduziert viele Elemente auf ein einziges Ergebnis reduzieren; Aggregatfunktionen; kommt z.B. bei Summenbildungen vor
+
+**Arbeiten mit Strings:**
+
+- split macht aus Strings Arrays
+- join
+- replace ersetzt nur das erste gesuchte Zeichen
+- replaceAll erstetzt alle Zeichen
